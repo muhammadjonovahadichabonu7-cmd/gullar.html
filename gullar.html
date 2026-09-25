@@ -45,3 +45,50 @@ else:
     print("\n❌ Kechirasiz, bu gul haqida ma'lumot topilmadi.")
 
 print("\n🌷 Dastur tugadi. Gullarni asrang!")
+# Gullar haqida ma'lumot dasturi 🌸
+
+gullar = {
+    "atirgul": {
+        "rang": "Qizil, oq, pushti, sariq",
+        "xususiyati": "Chiroyli va xushbo'y gul.",
+        "parvarish": "Quyoshli joyda saqlash va muntazam sug'orish kerak."
+    },
+    "lola": {
+        "rang": "Qizil, sariq, oq, pushti",
+        "xususiyati": "Bahorda ochiladigan mashhur gul.",
+        "parvarish": "Yorug' joyni yaxshi ko'radi va me'yorida sug'oriladi."
+    },
+    "romashka": {
+        "rang": "Oq va sariq",
+        "xususiyati": "Oddiy va nafis ko'rinishga ega gul.",
+        "parvarish": "Quyoshli joy va muntazam sug'orishni talab qiladi."
+    },
+    "orxideya": {
+        "rang": "Oq, pushti, binafsha",
+        "xususiyati": "Uy sharoitida ham yetishtiriladigan nafis gul.",
+        "parvarish": "Yorug', ammo to'g'ridan-to'g'ri quyosh tushmaydigan joyda saqlash kerak."
+    }
+}
+
+print("=" * 40)
+print("       🌸 GULLAR OLAMIGA XUSH KELIBSIZ 🌸")
+print("=" * 40)
+
+print("\nMavjud gullar:")
+for gul in gullar:
+    print("-", gul.title())
+
+tanlov = input("\nGul nomini kiriting: ").lower()
+
+if tanlov in gullar:
+    gul = gullar[tanlov]
+
+    print("\n🌺 Gul haqida ma'lumot:")
+    print("Nomi:", tanlov.title())
+    print("Rangi:", gul["rang"])
+    print("Xususiyati:", gul["xususiyati"])
+    print("Parvarishi:", gul["parvarish"])
+else:
+    print("\n❌ Kechirasiz, bu gul haqida ma'lumot topilmadi.")
+
+print("\n🌷 Dastur tugadi. Gullarni asrang!")
